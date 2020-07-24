@@ -1,0 +1,40 @@
+html{
+    height: 100%;
+}
+
+body {
+	background: radial-gradient(aliceblue, rgb(238, 239, 248));
+    font-family: sans-serif, Arial, Helvetica;
+    height: 100%;
+}
+
+.gridRoot{
+    display: grid;
+    min-height: 100%;
+    grid-template-columns:1f 1fr 1fr;
+    grid-template-rows: 70px 1fr 100px;
+    gap: 2px;
+    place-items: center;
+    grid-template-areas:
+        "gridHeader"
+        "gridMain"
+        "gridFooter";      
+}
+
+.gridHeader {
+	display: grid;
+	text-align: center;
+	grid-area: gridHeader;
+}
+
+.gridMain {
+	display: grid;
+	text-align: left;
+	grid-area: gridMain;
+}
+
+.gridFooter {
+	display: grid;
+	text-align: center;
+	grid-area: gridFooter;
+}

@@ -1,0 +1,13 @@
+
+.imgAvatar {
+	max-width: 40px;
+	max-height: 40px;
+	float: right;
+}
+
+.divInfoFooter {
+	float: left;
+	min-width: 200px;
+	vertical-align: middle;
+	font-size: small;
+}
