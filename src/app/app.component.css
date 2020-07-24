@@ -8,28 +8,21 @@ body {
     height: 100%;
 }
 
-.gridRoot{
+.gridRoot {
     display: grid;
-    min-height: 100%;
-    grid-template-columns:1f 1fr 1fr;
-    grid-template-rows: 70px 1fr 100px;
-    gap: 2px;
-    place-items: center;
+    height: 100vh;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
     grid-template-areas:
-        "gridHeader"
-        "gridMain"
-        "gridFooter";      
-}
-
-.gridHeader {
-	display: grid;
-	text-align: center;
-	grid-area: gridHeader;
+    "gridHeader gridHeader gridHeader"
+    "gridMain gridMain gridMain"
+    ". gridFooter .";
 }
 
 .gridMain {
 	display: grid;
-	text-align: left;
+	text-align: center;
 	grid-area: gridMain;
 }
 
@@ -37,4 +30,11 @@ body {
 	display: grid;
 	text-align: center;
 	grid-area: gridFooter;
+}
+
+.gridHeader {
+    background-color: #DD4124;
+	display: grid;
+	text-align: center;
+	grid-area: gridHeader;
 }
