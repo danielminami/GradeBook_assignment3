@@ -12,8 +12,8 @@ body {
     display: grid;
     height: 100vh;
     grid-template-columns: 200px 1fr 200px;
-    grid-template-rows: auto 1fr auto;
-    grid-gap: 10px;
+    grid-template-rows: auto 1fr 120px;
+    grid-gap: 4px;
     grid-template-areas:
     "gridHeader gridHeader gridHeader"
     "gridMain gridMain gridMain"
@@ -27,7 +27,7 @@ body {
 }
 
 .gridFooter {
-	display: grid;
+    display: grid;
 	text-align: center;
 	grid-area: gridFooter;
 }

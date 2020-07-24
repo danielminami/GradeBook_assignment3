@@ -1,6 +1,16 @@
-<section class="gridMain">
-    <p>
-        <select id="frm_categories"></select>
-    </p>
-    <button id="btnSubmit" onclick="showJoke()">Make Me laugh !</button>
-</section>
+<h3>Student: {{student.name}} - {{student.studentNumber}} || Campus: {{student.campus}}</h3>
+
+<table>
+    <tr>
+        <th>PROGRAM</th>
+        <th>COURSE</th>
+        <th>GRADE</th>
+    </tr>
+    <tr *ngFor="let grade of grades">
+        <td>{{grade.program}}</td>
+        <td>{{grade.course}}</td>
+        <td>{{grade.grade}} - {{letterGrade(grade.grade)}}</td>
+    </tr>
+</table>
+
+<h4>Program Average: {{average()}}</h4>
