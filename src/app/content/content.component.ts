@@ -63,5 +63,12 @@ export class ContentComponent implements OnInit {
     return letter;
   }
 
+  percentage(): string {
+    let percentage = 0;
+    for (let grade of this.grades) {
+      percentage += grade.grade;
+    }
+    return (percentage / this.grades.length).toFixed(0) + "%";
+  }
 
 }
